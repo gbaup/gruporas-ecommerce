@@ -26,7 +26,7 @@ export class BulkImportService {
     this.s3 = new S3({
       accessKeyId: this.configService.get<string>('AWS_AKID'),
       secretAccessKey: this.configService.get<string>('AWS_SAK'),
-      region: this.configService.get<string>('AWS_REGION'),
+      region: this.configService.get<string>('AWS_R'),
     });
   }
 
